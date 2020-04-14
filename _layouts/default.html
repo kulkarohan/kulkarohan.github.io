@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    <div class="row">
+        <div class="large-12 large-centered columns">
+
+            <header class="masthead">
+                <img src="{{ site.baseurl }}/public/profile.jpg" alt="Rohan Kulkarni">
+            </header>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="large-6 large-offset-3 columns">
+
+            <div class="content-section">
+
+                <p>
+                    Hi, I'm Rohan Kulkarni. I use the internet to learn and data to solve problems.
+                    <br><br>
+                    Some of my interests include data science & engineering, machine learning, cryptocurrency,
+                    cybersecurity, alternative education, basketball and hip-hop.
+                </p>
+                <br>
+                <h2>Projects</h2>
+            </div>
+
+            <main>
+                <!-- <h2>Projects</h2> -->
+                {% for post in site.posts %}
+                <div class="project-post">
+                    <h3><a href="{{ post.site }}">{{ post.title }}</a></h3>
+
+                    {{ post.content }}
+
+                    <ul>
+                        <li><a href="{{ post.git }}"><i class="fa fa-github"></i></a></li>
+                        {% if post.site %}
+                        <li><a href="{{ post.site }}"><i class="fa fa-link"></i></a></li>
+                        {% endif %}
+                    </ul>
+
+                    <hr />
+                </div>
+                {% endfor %}
+            </main>
+
+            <div class="content-section">
+                <h2>Background</h2>
+
+                <p>
+                    I studied Computer Science at <a href="https://drexel.edu">Drexel University</a> for 3 years and
+                    Data Science at <a href="https://lambdaschool.com">Lambda School</a> for 9 months. I've done two
+                    Co-ops -- Data Scientist @
+                    <a href="https://verif-y.com">Verif-y</a> (2018) and Cybersecurity Analyst @ <a
+                        href="https://dayzim.com">Day & Zimmermann</a> (2017) -- 6 months each.
+                    <br><br>
+                    Currently looking for a full-time opportunity, if you think we'd work well together feel free to
+                    reach out.
+                </p>
+                <br>
+                <h2>Contact</h2>
+            </div>
+
+            <footer>
+                <p>
+                    <a href="mailto:kulkarohan@gmail.com"><i class="fa fa-envelope fa-2x"></i></a> |
+                    <a href="https://www.linkedin.com/in/rohankulkarni58"><i class="fa fa-linkedin fa-2x"></i></a> |
+                    <a href="https://github.com/kulkarohan"><i class="fa fa-github fa-2x"></i></a> |
+                    <a href="https://twitter.com/kulkarohan"><i class="fa fa-twitter fa-2x"></i></a>
+                </p>
+
+            </footer>
+
+        </div>
+
+        <div class="large-2 large-offset-1 columns social">
+            <ul>
+                <li>
+                    <a href="mailto:kulkarohan@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/rohankulkarni58">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/{{ site.github }}">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/{{ site.twitter }}">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    {% if site.google_analytics %}
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script> {% endif %}
+
+</body>
+
+</html>

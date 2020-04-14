@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Rohan Kulkarni</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-04-14T16:04:20-04:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Rohan Kulkarni</name>
+   <email>kulkarohan@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Tally AI</title>
+   <link href="http://localhost:4000/2020/02/02/tally-ai/"/>
+   <updated>2020-02-02T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2020/02/02/tally-ai</id>
+   <content type="html">&lt;p&gt;An online platform for small businesses that aggregates data from review sites such as Yelp &amp;amp; Foursquare, and provides sentiment analysis on what customers are saying about them and their competitors&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Skills&lt;/strong&gt;: Data Engineering, Natural Language Processing &lt;br /&gt;
+&lt;strong&gt;Technologies&lt;/strong&gt;: Pandas, Django, spaCy, vaderSentiment&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>NBA Career Longevity Predictor</title>
+   <link href="http://localhost:4000/2020/01/02/nba-predictor/"/>
+   <updated>2020-01-02T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2020/01/02/nba-predictor</id>
+   <content type="html">&lt;p&gt;Predicts how many years a given NBA player will last based on the stats of himself and his peers. A player comparison is provided as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Skills&lt;/strong&gt;: Data Engineering, Machine Learning &lt;br /&gt;
+&lt;strong&gt;Technologies&lt;/strong&gt;: Flask, PostgreSQL, Sci-kit learn&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Reddit Recommender</title>
+   <link href="http://localhost:4000/2019/12/09/reddit-recommender/"/>
+   <updated>2019-12-09T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2019/12/09/reddit-recommender</id>
+   <content type="html">&lt;p&gt;Have something to share on Reddit but don’t know which subreddit to post in? Input your thought to Reddit Recommender and let it suggest you one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Skills&lt;/strong&gt;: Data Engineering, Machine Learning &lt;br /&gt;
+&lt;strong&gt;Technologies&lt;/strong&gt;: Pandas, Sci-kit learn&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TwitOff</title>
+   <link href="http://localhost:4000/2019/11/15/twitoff/"/>
+   <updated>2019-11-15T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2019/11/15/twitoff</id>
+   <content type="html">&lt;p&gt;Choose two Twitter handles, input some text, and let Twitoff predict which user is more likely to tweet the given text.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Skills&lt;/strong&gt;: Data Engineering, Machine Learning &lt;br /&gt;
+&lt;strong&gt;Technologies&lt;/strong&gt;: Twitter API, Flask, SQLAlchemy, Sci-kit learn&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

@@ -1,0 +1,33 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Rohan Kulkarni
+# url:                 http://kulkarohan.com
+paginate:            1
+# baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Rohan Kulkarni
+  url:               https://twitter.com/kulkarohan
+  email:             kulkarohan@gmail.com
+
+# Custom vars
+github:
+  repo:              https://github.com/kulkarohan/kulkarohan.github.io
+google_analytics:    UA-163588356-1
+twitter:             kulkarohan
+github:              kulkarohan
+
+# Gems
+plugins:
+  # - jekyll-paginate
+  # - jekyll-gist
